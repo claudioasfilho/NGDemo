@@ -29,7 +29,7 @@
 
  MEMORY
  {
-   FLASH      (rx)  : ORIGIN = 0x12000, LENGTH = 0x6c000
+   FLASH      (rx)  : ORIGIN = 0x6000, LENGTH = 0x6c000
    RAM        (rwx) : ORIGIN = 0x20000000, LENGTH = 0x8000
  }
 

@@ -404,14 +404,6 @@ void send (sl_cli_command_arg_t *arguments)
 
   data_send = sl_cli_get_argument_int16(arguments, 0);
 
-  app_log("Uart data RX %d \n", data_send);
-  // Read report button characteristic stored in local GATT database.
-//  sc = sl_bt_gatt_server_read_attribute_value(gattdb_App_Read,
-//                                              0,
-//                                              sizeof(data_send),
-//                                              &data_len,
-//                                              &data_send);
-
   // Write attribute in the local GATT database.
     sc = sl_bt_gatt_server_write_attribute_value(gattdb_App_Read,
                                                  0,
